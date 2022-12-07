@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    To jest main z maths
+    {{result}}
+    <br>
+    {{lista.0}}
+    {{dictionary.Ala}}
+    {{dane.a}}
+
+    {{ xxxx }}
+
+    <table>
+        {% for o in lista %}
+        <tr class="{% cycle 'row1' 'row2' %}">
+            <td>{{o|upper}}</td>
+        </tr>
+
+        {% endfor %}
+    </table>
+
+    <ul>
+        {% for el in maths %}
+            <li>{{ el }}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
